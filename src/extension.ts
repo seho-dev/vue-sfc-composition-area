@@ -1,26 +1,43 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import { checkScriptTag } from "./core/checker";
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "vue-sfc-composition-area" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('vue-sfc-composition-area.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from vue-sfc-composition-area!');
-	});
-
-	context.subscriptions.push(disposable);
+	// 获取当前打开的vue文件路径
+	const editor = vscode.window.activeTextEditor;
+	if (editor) {
+		const document = editor.document;
+		if (document.languageId === 'vue') {
+			// // 查看git仓库下的history记录, 最近的一次hash值
+			// const git = require('simple-git/promise')(document.uri.fsPath);
+			// git.log({ file: document.fileName }).then((log: any) => {
+			// 	const hash = log.latest.hash;
+			// 	// 获取当前文件在git仓库中的路径
+			// 	const path = document.uri.fsPath.replace(document.fileName, '');
+			// 	// 获取当前文件在git仓库中的路径
+			// 	const fileName = document.fileName.replace(path, '');
+			// 	// 获取当前文件在git仓库中的历史版本
+			// 	git.show([`${hash}:${fileName}`]).then((data: any) => {
+			// 		// 检查script标签是否存在
+			// 		checkScriptTag(data).then((scriptAST: any) => {
+			// 			if (scriptAST) {
+			// 				vscode.window.showInformationMessage('script标签存在');
+			// 			} else {
+			// 				vscode.window.showInformationMessage('script标签不存在');
+			// 			}
+			// 		});
+			// 	});
+			// }
+			// );
+			const fileName = document.fileName;
+			checkScriptTag(fileName).then(res => {
+				// 如果有script标签
+				if (res) {
+					console.log(res);
+				}
+			});
+		}
+	}
 }
 
 // This method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }
