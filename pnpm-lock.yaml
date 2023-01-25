@@ -9,6 +9,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
   '@vscode/test-electron': ^2.2.0
+  '@vue/reactivity': ^3.2.45
   eslint: ^8.28.0
   glob: ^8.0.3
   mocha: ^10.1.0
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   '@originjs/vue-sfc-ast-parser': 1.0.2_eslint@8.32.0
+  '@vue/reactivity': 3.2.45
 
 devDependencies:
   '@types/glob': 8.0.1
@@ -755,6 +757,12 @@ packages:
     resolution: {integrity: sha512-tyYeUEuKqqZO137WrZkpwfPCdiiIeXYCcJ8L4gWz9vqaxzIQRccTSwSWZ/Axx5YR2z+LvpUbmPNXxuBU45lyRw==}
     dependencies:
       '@vue/compiler-core': 3.2.45
+      '@vue/shared': 3.2.45
+    dev: false
+
+  /@vue/reactivity/3.2.45:
+    resolution: {integrity: sha512-PRvhCcQcyEVohW0P8iQ7HDcIOXRjZfAsOds3N99X/Dzewy8TVhTCT4uXpAHfoKjVTJRA0O0K+6QNkDIZAxNi3A==}
+    dependencies:
       '@vue/shared': 3.2.45
     dev: false
 
