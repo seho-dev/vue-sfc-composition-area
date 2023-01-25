@@ -4,7 +4,7 @@ import { SPECIAL_MARK } from "../index";
 import type { List } from "../index";
 
 
-export const checkScriptTag = (fileName: string): Promise<false | { ast: any, line?: number }> => {
+export const checkScriptTag = (fileName: string): Promise<false | { ast: any, startLine?: number, endLine?: number }> => {
     return new Promise((resolve, reject) => {
         readFile(fileName, (error, data) => {
             if (error) {
@@ -17,7 +17,8 @@ export const checkScriptTag = (fileName: string): Promise<false | { ast: any, li
                 if (scriptAST !== null) {
                     resolve({
                         ast: scriptAST,
-                        line: descriptor?.script?.loc.start.line
+                        startLine: descriptor?.script?.loc.start.line,
+                        endLine: descriptor?.script?.loc.end.line
                     });
                 } else {
                     resolve(false);
@@ -33,17 +34,16 @@ export const parseCommentsToList = (ast: any[]): List => {
     if (ast.length % 2 !== 0) {
         ast.pop();
     }
-    const list = [];
+    const list: List = [];
     // ast每2个循环一次 (一对标签视为一个block)
     for (let i = 0; i < ast.length; i += 2) {
         // 获取开始标签和结束标签的line行数
-        ast[i]['loc']['end']['line'];
         list.push({
+            level: ast[i].value.split('#')[2],
             title: ast[i].value.split('#')[1],
             start: ast[i]['loc']['end']['line'],
-            end: ast[i + 1]['loc']['start']['line']
+            end: ast[i + 1]['loc']['end']['line']
         });
     }
-    console.log(list);
     return list;
 };

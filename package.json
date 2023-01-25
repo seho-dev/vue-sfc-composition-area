@@ -21,6 +21,36 @@
           "name": "vue-sfc-composition-area"
         }
       ]
+    },
+    "commands": [
+      {
+        "command": "vue-sfc-composition-area.refresh",
+        "title": "Refresh",
+        "icon": {
+          "light": "media/refresh_dark.png",
+          "dark": "media/refresh_light.png"
+        }
+      },
+      {
+        "command": "vue-sfc-composition-area.add",
+        "title": "Add",
+        "icon": {
+          "light": "media/add_dark.png",
+          "dark": "media/add_light.png"
+        }
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "vue-sfc-composition-area.refresh",
+          "group": "navigation"
+        },
+        {
+          "command": "vue-sfc-composition-area.add",
+          "group": "navigation"
+        }
+      ]
     }
   },
   "scripts": {
