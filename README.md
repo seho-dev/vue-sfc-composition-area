@@ -1,71 +1,32 @@
-# vue-sfc-composition-area README
+# vue-sfc-composition-area
 
-This is the README for your extension "vue-sfc-composition-area". After writing up a brief description, we recommend including the following sections.
+<img src="https://static.yinzhuoei.com/typecho/2023/01/25/578581116537861/1635527518options-vs-composition-api.png"></img>
+
+This is a Vscode plugin that assists Vue developers in writing better **Composition API** business logic with a **Regional Mindset**
+
+## How to use
+
+After searching for `vue-sfc-composition-area` (*comming soon*) in the vscode extension and installing it; you will see the window in the lower left corner of the vscode explorer, which you can use to create your **Composition API** logic
+
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+No matter how long your vue file is, you can **quickly** find your business logic, and you can give each area a corresponding level of importance so that it can be categorized, and the different levels will be displayed differently in the small window
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## Quick Preview
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+<!-- mp4 -->
+<video width="100%" height="340" controls>
+      <source src=“https://static.yinzhuoei.com/typecho/2023/01/25/57641938205784/Jietu20230125-223831-HD.mp4” >
+    </video>
 
-## Requirements
+## Unfinished Business
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Add smart cache mode for unnecessary AST analysis
+- Support drag and drop area window for code order adjustment
+- Nested support
 
-## Extension Settings
+## Principle
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Script AST for Vue files to calculate the start and end positions of special tags, using the Vue responsive core inside the source code
