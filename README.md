@@ -1,8 +1,16 @@
 # vue-sfc-composition-area
 
-<img src="https://static.yinzhuoei.com/typecho/2023/01/25/578581116537861/1635527518options-vs-composition-api.png"></img>
+<div align=center>
+  <img width="30%" height="30%" alt="Group 4" style="text-align: center;" src="https://user-images.githubusercontent.com/35763284/214764255-9f5b0b50-2977-42bb-b5da-e8a2d158b200.png">
+</div>
+
 
 This is a Vscode plugin that assists Vue developers in writing better **Composition API** business logic with a **Regional Mindset**
+
+<div align=center>
+  <img src="https://static.yinzhuoei.com/typecho/2023/01/25/578581116537861/1635527518options-vs-composition-api.png"></img>
+</div>
+
 
 ## How to use
 
