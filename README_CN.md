@@ -1,10 +1,18 @@
 # vue-sfc-composition-area
 
+<div align=center>
+  <img width="30%" height="30%" alt="Group 4" src="https://user-images.githubusercontent.com/35763284/214764870-7a7c3947-1436-403b-96a2-a4a9f5952794.png">
+</div>
+
+
 [EN-DOC](https://github.com/1018715564/vue-sfc-composition-area/blob/main/README.md)
 
-这是一个VSCODE插件, 主要帮助Vue3开发者编写更好的Composition API, 插件整体使用区域思想, 将区域和代码业务逻辑相关联, 无论你的代码有多长多复杂, 可以根据业务区域准确定位对应的代码
+这是一个Vscode插件, 主要帮助Vue3开发者编写更好的Composition API, 插件整体使用区域思想, 将区域和代码业务逻辑相关联, 无论你的代码有多长多复杂, 可以根据业务区域准确定位对应的代码
 
-<img src="https://static.yinzhuoei.com/typecho/2023/01/25/578581116537861/1635527518options-vs-composition-api.png"></img>
+
+<div align=center>
+  <img src="https://static.yinzhuoei.com/typecho/2023/01/25/578581116537861/1635527518options-vs-composition-api.png"></img>
+</div>
 
 ## 使用
 

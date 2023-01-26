@@ -5,6 +5,7 @@
 
 </div>
 
+[中文文档](https://github.com/1018715564/vue-sfc-composition-area/blob/main/README_CN.md)
 
 This is a Vscode plugin that assists Vue developers in writing better **Composition API** business logic with a **Regional Mindset**
 
