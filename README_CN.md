@@ -26,8 +26,9 @@
 
 ## 快速预览
 
-<!-- mp4 -->
-`[![Video Name](https://user-images.githubusercontent.com/35763284/214598686-39e94e17-047b-4b57-8978-1a722984dc44.mp4)]`
+[<!-- mp4 -->
+`[![Video Name](https://user-images.githubusercontent.com/35763284/214598686-39e94e17-047b-4b57-8978-1a722984dc44.mp4)]`](https://user-images.githubusercontent.com/35763284/214604500-11ffd85c-aa15-44c0-9f9f-5a00f3adabf4.mp4
+)
 
 
 ## 未完成的特性
