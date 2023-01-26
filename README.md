@@ -1,7 +1,8 @@
 # vue-sfc-composition-area
 
 <div align=center>
-  <img width="30%" height="30%" alt="Group 4" style="text-align: center;" src="https://user-images.githubusercontent.com/35763284/214764255-9f5b0b50-2977-42bb-b5da-e8a2d158b200.png">
+  <img width="30%" height="30%" alt="Group 4" src="https://user-images.githubusercontent.com/35763284/214764870-7a7c3947-1436-403b-96a2-a4a9f5952794.png">
+
 </div>
 
 
