@@ -29,11 +29,15 @@ export const checkScriptTag = (fileName: string): Promise<false | { ast: any, st
 };
 
 export const parseCommentsToList = (ast: any[]): List => {
-    ast = ast.filter((item: any) => item.type === 'CommentLine' && item.value.includes(SPECIAL_MARK));
-    // 注释块中的代码是成双成对的，所以最后的结果是一半, 就进行截取
-    if (ast.length % 2 !== 0) {
-        ast.pop();
-    }
+    ast = ast.filter((item: any, index: number) => {
+        if (item.type === 'CommentLine' && item.value.includes(SPECIAL_MARK)) {
+            if (index % 2 === 0) {
+                return true;
+            } else {
+                return item.value.trimStart() === SPECIAL_MARK;
+            }
+        }
+    });
     const list: List = [];
     // ast每2个循环一次 (一对标签视为一个block)
     for (let i = 0; i < ast.length; i += 2) {
