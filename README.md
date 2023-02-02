@@ -16,7 +16,7 @@ This is a Vscode plugin that assists Vue developers in writing better **Composit
 
 ## How to use
 
-After searching for `vue-sfc-composition-area` (*comming soon*) in the vscode extension and installing it; you will see the window in the lower left corner of the vscode explorer, which you can use to create your **Composition API** logic
+After searching for [vue-sfc-composition-area](https://marketplace.visualstudio.com/items?itemName=swordjs.vue-sfc-composition-area) in the vscode extension and installing it; you will see the window in the lower left corner of the vscode explorer, which you can use to create your **Composition API** logic
 
 
 ## Features

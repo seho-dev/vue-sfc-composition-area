@@ -16,7 +16,7 @@
 
 ## 使用
 
-在Vscode插件市场中搜索`vue-sfc-composition-area` 之后进行下载, 会在你的编辑器的左下角区域显示小窗口, 在窗口中提供了一些逻辑操作比如新增,刷新等; 当我们新增一个区域之后, 会在对应的Vue文件的script末尾添加一段**注释**, 你就可以把你的业务逻辑写到这个注释块中.
+在Vscode插件市场中搜索 [vue-sfc-composition-area](https://marketplace.visualstudio.com/items?itemName=swordjs.vue-sfc-composition-area) 之后进行下载, 会在你的编辑器的左下角区域显示小窗口, 在窗口中提供了一些逻辑操作比如新增,刷新等; 当我们新增一个区域之后, 会在对应的Vue文件的script末尾添加一段**注释**, 你就可以把你的业务逻辑写到这个注释块中.
 
 
 ## 特性
