@@ -1,8 +1,13 @@
 {
   "name": "vue-sfc-composition-area",
   "displayName": "vue-sfc-composition-area",
-  "description": "",
+  "description": "This is a Vscode plugin that assists Vue developers in writing better Composition API business logic with a Regional Mindset",
   "version": "0.0.1",
+  "publisher": "swordjs",
+  "repository": {
+    "url": "https://github.com/1018715564/vue-sfc-composition-area"
+  },
+  "icon": "media/logo.png",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -62,6 +67,7 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
+    "@types/eslint-scope": "^3.7.4",
     "@types/glob": "^8.0.0",
     "@types/lodash": "^4.14.191",
     "@types/lodash-es": "^4.17.6",
