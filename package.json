@@ -63,6 +63,8 @@
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
+    "@types/lodash": "^4.14.191",
+    "@types/lodash-es": "^4.17.6",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
     "@types/vscode": "^1.74.0",
@@ -76,6 +78,8 @@
   },
   "dependencies": {
     "@originjs/vue-sfc-ast-parser": "^1.0.2",
-    "@vue/reactivity": "^3.2.45"
+    "@vue/reactivity": "^3.2.45",
+    "crypto": "^1.0.1",
+    "lodash-es": "^4.17.21"
   }
 }
